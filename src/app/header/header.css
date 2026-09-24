@@ -3,8 +3,7 @@ header {
   align-items: center;
   justify-content: space-between;
   margin-top: 1.5rem;
-  width: 100dvw;
-  padding-inline: 1.5rem;
+  width: 100%;
 }
 
 p {
