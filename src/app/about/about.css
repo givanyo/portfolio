@@ -1,0 +1,41 @@
+section {
+  margin-top: 12rem;
+  max-width: 1200px;
+}
+.section-title {
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-weight: 500;
+    color: var(--white-text);
+    font-size: 2.5rem;
+    line-height: 1.4;
+    text-overflow: balance;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.75rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+
+.purple {
+    color: #6858C7;
+}
+
+.green-btn {
+    color: hsla(69, 90%, 60%, 60%);
+}
