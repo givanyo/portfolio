@@ -1,0 +1,8 @@
+<section>
+  <p class="section-title">Tecnologias & Ferramentas</p>
+  <div class="cards">
+    @for (card of sortedCards; track card.id) {
+      <app-card [cardInfo]="card"></app-card>
+    }
+  </div>
+</section>
