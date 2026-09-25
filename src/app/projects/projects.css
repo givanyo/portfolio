@@ -1,0 +1,24 @@
+section {
+    margin-top: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.section-title {
+  text-transform: uppercase;
+  color: var(--white-text);
+  margin-bottom: 1.5rem;
+}
+
+.container-center {
+    display: flex;
+    align-self: center;
+    gap: 8rem;
+    width: 60%;
+}
+
+.project-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
