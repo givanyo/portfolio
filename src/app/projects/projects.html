@@ -1,0 +1,15 @@
+<section>
+  <p class="section-title">Projetos</p>
+  <div class="container-center">
+    <div class="project-column">
+      @for (project of firstColumn; track project.id) {
+        <app-project-card [project]="project" />
+      }
+    </div>
+    <div class="project-column">
+      @for (project of secondColumn; track project.id) {
+        <app-project-card [project]="project"></app-project-card>
+      }
+    </div>
+  </div>
+</section>

@@ -1,43 +1,39 @@
 :host {
-    display: flex;
-    flex: 1 1 0;
-    flex-direction: column;
-    gap: 2.5rem;
-    background-color: #242424;
-    padding-inline: 1.5rem;
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    color: var(--white-text-paragraph);
-    border-radius: 8px;
-    overflow: hidden;
+  display: flex;
+  min-width: 540px;
+  flex: 1 1 0;
+  flex-direction: column;
+  gap: 2.5rem;
+  background-color: #242424;
+  padding-inline: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: var(--white-text-paragraph);
+  border-radius: 8px;
 }
 
-
 .icon-container {
-    background-color: #363636;
-    border-radius: 4px;
-    width: 4rem;
-    height: 4rem;
-    padding-inline: 0.5rem;
-    padding-block: 0.5rem;
-    margin-bottom: -1rem;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-
-    overflow: hidden;
+  display: flex;
+  background-color: #363636;
+  border-radius: 4px;
+  width: fit-content;
+  height: fit-content;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  margin-bottom: -1rem;
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
 }
 
 p {
-    font-size: 1.25rem;
-    width: 100%;
-    text-wrap: balance;
-    line-height: 1.4;
-    overflow: hidden;
+  font-size: 1.25rem;
+  width: 100%;
+  text-wrap: balance;
+  line-height: 1.4;
 }
 
 h3 {
-    font-size: 2rem;
-    overflow: hidden;
+  font-size: 2rem;
 }

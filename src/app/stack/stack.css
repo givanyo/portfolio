@@ -1,6 +1,6 @@
 section {
-    margin-top: 6rem;
-    width: 100%;
+  margin-top: 6rem;
+  width: 100%;
 }
 
 .section-title {
@@ -10,9 +10,42 @@ section {
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    gap: 3rem;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 1.375rem;
+  color: var(--purple);
+  font-weight: 600;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.15s;
+  svg {
+    margin-top: 4px;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  svg path {
+    transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.15s;
+  }
+}
+
+button:hover {
+  color: var(--purple-hover);
+  svg path {
+    stroke: var(--purple-hover);
+  }
 }
