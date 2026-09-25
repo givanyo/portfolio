@@ -7,15 +7,17 @@
 :root {
   --white-text: #d9d9d9;
   --white-text-paragraph: hsla(0, 0%, 85%, 0.8);
+  --purple: #6858C7; 
+  --purple-hover: #8474DC;
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Delight-VF';
-  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   background-color: #1a1a1a;
 }
