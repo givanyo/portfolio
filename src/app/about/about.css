@@ -13,7 +13,7 @@ h1 {
     color: var(--white-text);
     font-size: 2.5rem;
     line-height: 1.4;
-    text-overflow: balance;
+    text-wrap: balance;
 }
 
 .buttons {
@@ -33,7 +33,7 @@ button {
 }
 
 .purple {
-    color: #6858C7;
+    color: var(--purple);
 }
 
 .green-btn {
