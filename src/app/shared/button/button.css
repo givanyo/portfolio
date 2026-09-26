@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
   outline: none;
   border: none;
   background-color: transparent;
@@ -11,22 +11,24 @@
   line-height: 1.2;
   cursor: pointer;
 
-  svg {
-    margin-top: 5px;
-    width: 1.2rem;
-    height: 1.2rem;
-  }
-
-  svg path {
-    transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.15s;
-  }
-
   p,
   a {
+    position: relative;
     transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.15s;
     text-decoration: none;
+    svg {
+      position: absolute;
+      right: 24;
+      bottom: 0;
+      margin-bottom: 2px;
+    }
   }
 }
+
+svg {
+  margin-top: 4px;
+}
+
 .text-md {
   font-size: 1.375rem;
 }
@@ -47,7 +49,6 @@
   color: var(--white);
 }
 
-
 :host:hover {
   .purple {
     color: var(--purple-hover);
@@ -60,7 +61,8 @@
   .green {
     color: var(--green-hover);
   }
-  svg path {
+  svg path,
+  a svg path {
     stroke: var(--purple-hover);
   }
 }
