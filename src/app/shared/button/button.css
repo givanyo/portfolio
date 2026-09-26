@@ -19,8 +19,7 @@
     svg {
       position: absolute;
       right: 24;
-      bottom: 0;
-      margin-bottom: 2px;
+      padding-top: 2px;
     }
   }
 }
