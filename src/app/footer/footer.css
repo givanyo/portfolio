@@ -1,0 +1,20 @@
+:host {
+    margin-top: 6rem;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-inline: -1.5rem;
+    padding-inline: 1.5rem;
+    padding-block: 1rem;
+    color: var(--white-hover);
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
