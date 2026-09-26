@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CardContent } from '../shared/card/card.model';
 import { Card } from '../shared/card/card';
+import { Button } from '../shared/button/button';
 
 @Component({
   selector: 'app-stack',
-  imports: [Card],
+  imports: [Card, Button],
   templateUrl: './stack.html',
   styleUrl: './stack.css',
 })
