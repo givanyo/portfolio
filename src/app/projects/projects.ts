@@ -46,7 +46,7 @@ export class Projects {
       title: 'Calculadora com Signals',
       description:
         'Calculadora desenvolvida em Angular, com suporte ao teclado e gerenciamento de estado reativo com Signals.',
-      githubLink: 'https://github.com/givanyo/angular-todo',
+      githubLink: 'https://github.com/givanyo/angular-signals-calculator',
       liveWebsiteLink: 'https://givanyo-angular-calculator.vercel.app/',
     },
 
