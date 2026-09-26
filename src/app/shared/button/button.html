@@ -10,5 +10,5 @@
     />
   </svg>
 } @else {
-  <p>{{ button().text }}</p>
+  <p [class]="button().color + ' ' + 'text-' + button().fontSize">{{ button().text }}</p>
 }
