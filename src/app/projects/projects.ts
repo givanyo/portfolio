@@ -49,12 +49,36 @@ export class Projects {
       githubLink: 'https://github.com/givanyo/angular-todo',
       liveWebsiteLink: 'https://givanyo-angular-calculator.vercel.app/',
     },
+
+    {
+      id: 4,
+      orientation: 'horizontal-full-width',
+      imgPath: 'ciencia-delas.png',
+      title: 'Ciência Delas',
+      description:
+        'Projeto para a FECEG 2026 relacionado ao incentivo à participação de mulheres na ciência. Fui responsável pela idealização e design do projeto. ',
+      liveWebsiteLink: 'https://ciencia-delas.vercel.app/',
+    },
   ];
 
   get firstColumn() {
-    return this.projects.filter((project) => project.id < this.projects.length / 2);
+    if (this.projects.length % 2 == 0) {
+      return this.projects.filter((project) => project.id < this.projects.length / 2);
+    }
+    return this.projects.filter((project) => project.id < (this.projects.length - 1) / 2);
   }
   get secondColumn() {
-    return this.projects.filter((project) => project.id >= this.projects.length / 2);
+    if (this.projects.length % 2 == 0) {
+      return this.projects.filter((project) => project.id >= this.projects.length / 2);
+    }
+    const slicedProjectArray = this.projects.slice(0, this.projects.length - 1);
+    return slicedProjectArray.filter((project) => project.id >= slicedProjectArray.length / 2);
+  }
+
+  get lastProject() {
+    if (this.projects.length % 2 != 0) {
+      return this.projects.find((project) => project.id == this.projects.length - 1);
+    }
+    return undefined;
   }
 }

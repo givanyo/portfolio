@@ -2,9 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  width: 30vw;
+  width: 100%;
   color: var(--white-text);
   img {
+    width: 100%;
     object-fit: cover;
     object-fit: center;
     border-radius: 8px;
@@ -33,6 +34,11 @@
   }
 }
 
+.project.horizontal-full-width img {
+  aspect-ratio: 1.4 / 1;
+  max-height: 480px;
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -45,4 +51,9 @@
     font-size: 1.2rem;
     font-weight: 600;
   }
+}
+
+.buttons,
+p {
+  max-width: 640px;
 }
