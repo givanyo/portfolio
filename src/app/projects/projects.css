@@ -10,15 +10,24 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.project-wrapper {
+    width: 65%;
+    align-self: center;
+}
 .container-center {
     display: flex;
     align-self: center;
     gap: 8rem;
-    width: 65%;
+    width: fit-content;
 }
 
 .project-column {
     display: flex;
     flex-direction: column;
     gap: 8rem;
+}
+
+.row-full-width {
+    width: 100%;
+    margin-top: 5rem;
 }
