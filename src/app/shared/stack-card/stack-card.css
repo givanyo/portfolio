@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 1.5rem;
+  height: 10rem;
+  width: 9rem;
+  aspect-ratio: 1 / 0.8;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1) 0.3s;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    color: var(--white-text);
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+:host:hover {
+    transform: translateY(-8px);
+    transform: scale(1.1)
+}
