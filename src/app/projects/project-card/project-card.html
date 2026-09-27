@@ -4,13 +4,7 @@
   <p>{{ project().description }}</p>
   <div class="buttons">
     <app-button
-      [button]="{
-        color: 'purple',
-        text: buttonText,
-        fontSize: 'md',
-        displaySvg: true,
-        link: project().liveWebsiteLink || project().githubLink,
-      }"
+      [button]="button"
     />
     @if (project().githubLink) {
       <a [href]="project().githubLink">

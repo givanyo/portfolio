@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CardContent } from '../shared/card/card.model';
 import { Card } from '../shared/card/card';
 import { Button } from '../shared/button/button';
+import { ButtonService } from '../shared/button/button.service';
 
 @Component({
   selector: 'app-stack',
@@ -10,6 +11,7 @@ import { Button } from '../shared/button/button';
   styleUrl: './stack.css',
 })
 export class Stack {
+  buttonService = inject(ButtonService);
   cards: CardContent[] = [
     {
       id: 3,

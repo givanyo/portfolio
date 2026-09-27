@@ -1,7 +1,5 @@
 <header>
-    <p>
-    gio viana
-    </p>
+  <p>gio viana</p>
   <nav>
     <ul>
       <li>sobre</li>
@@ -10,10 +8,5 @@
       <li>curriculo</li>
     </ul>
   </nav>
-  <app-button [button]="{
-    text: 'contato',
-    fontSize: 'md',
-    color: 'purple',
-    displaySvg: false
-  }"></app-button>
+  <app-button [button]="buttonService.contactCloseBtn()"></app-button>
 </header>

@@ -3,21 +3,9 @@
 
 <div class="buttons">
   <app-button
-    [button]="{
-      text: 'github',
-      fontSize: 'md',
-      color: 'green',
-      displaySvg: false,
-      link: 'https://github.com/givanyo',
-    }"
+    [button]="buttonService.githubBtn()"
   />
   <app-button
-    [button]="{
-      text: 'email',
-      fontSize: 'md',
-      color: 'green',
-      displaySvg: false,
-      link: 'https://mail.google.com/mail/?view=cm&fs=1&to=giovanniviana22@gmail.com&su=Contato%20pelo%20portfólio&body=Olá!',
-    }"
+    [button]="buttonService.emailBtn()"
   />
 </div>

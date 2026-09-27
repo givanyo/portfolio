@@ -6,21 +6,7 @@
     TypeScript, Java e MySQL, além de interesse por UX design.
   </h1>
   <div class="buttons">
-    <app-button
-      [button]="{
-        text: 'contato',
-        fontSize: 'lg',
-        color: 'purple',
-        displaySvg: false
-      }"
-    ></app-button>
-    <app-button
-      [button]="{
-        text: 'cv',
-        fontSize: 'lg',
-        color: 'green',
-        displaySvg: false
-      }"
-    ></app-button>
+    <app-button [button]="buttons.contato()"></app-button>
+    <app-button [button]="buttons.cv()"></app-button>
   </div>
 </section>
