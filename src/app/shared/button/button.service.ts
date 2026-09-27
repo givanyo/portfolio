@@ -26,6 +26,7 @@ export class ButtonService {
     fontSize: 'lg',
     color: 'purple',
     displaySvg: false,
+    action: this.toggleContactClose,
   });
 
   contactCloseBtn = signal<ButtonData>({
@@ -41,7 +42,7 @@ export class ButtonService {
     fontSize: 'lg',
     color: 'green',
     displaySvg: false,
-    link: '/pdf/curriculo.pdf'
+    link: '/pdf/curriculo.pdf',
   });
 
   stackBtn = signal<ButtonData>({
