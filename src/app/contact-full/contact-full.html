@@ -1,30 +1,9 @@
 <div class="buttons">
   <div class="spacer"></div>
-  <app-button
-    [button]="{
-      text: 'email',
-      fontSize: 'xl',
-      color: 'green',
-      displaySvg: false,
-    }"
-  />
+  <app-button [button]="buttons.email()" />
   <div class="spacer"></div>
-  <app-button
-    [button]="{
-      text: 'github',
-      fontSize: 'xl',
-      color: 'green',
-      displaySvg: false,
-    }"
-  />
+  <app-button [button]="buttons.github()" />
   <div class="spacer"></div>
-  <app-button
-    [button]="{
-      text: 'linkedin',
-      fontSize: 'xl',
-      color: 'green',
-      displaySvg: false,
-    }"
-  />
+  <app-button [button]="buttons.linkedin()" />
   <div class="spacer"></div>
 </div>

@@ -1,5 +1,5 @@
 @if (button().link) {
-  <a [href]="button().link" [class]="button().color + ' ' + 'text-' + button().fontSize">
+  <a [href]="button().link" [class]="button().color + ' ' + 'text-' + button().fontSize" target="_blank">
     {{ button().text }}
     @if (button().displaySvg) {
       <svg
