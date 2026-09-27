@@ -3,11 +3,12 @@
   top: 0;
   margin-inline: -1.5rem;
   width: 100%;
-  min-height: 100%;
-  max-height: fit-content;
-  padding-top: 10rem;
+  height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
   background-color: var(--purple-70);
   backdrop-filter: blur(16px);
+  overflow-y: auto;
 }
 .buttons {
   display: flex;
