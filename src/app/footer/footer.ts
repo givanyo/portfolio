@@ -3,11 +3,11 @@ import { Button } from '../shared/button/button';
 import { ButtonService } from '../shared/button/button.service';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-footer',
   imports: [Button],
-  templateUrl: './header.html',
-  styleUrl: './header.css',
+  templateUrl: './footer.html',
+  styleUrl: './footer.css',
 })
-export class Header {
+export class Footer {
   buttonService = inject(ButtonService);
 }

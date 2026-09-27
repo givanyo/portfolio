@@ -3,9 +3,11 @@ import { Header } from './header/header';
 import { About } from './about/about';
 import { Stack } from './stack/stack';
 import { Projects } from './projects/projects';
+import { Footer } from './footer/footer';
+import { ContactFull } from './contact-full/contact-full';
 @Component({
   selector: 'app-root',
-  imports: [Header, About, Stack, Projects],
+  imports: [Header, About, Stack, Projects, Footer],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })

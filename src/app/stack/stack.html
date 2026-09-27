@@ -5,12 +5,5 @@
       <app-card [cardInfo]="card"></app-card>
     }
   </div>
-  <app-button
-    [button]="{
-      text: 'ver todas as tecnologias',
-      fontSize: 'md',
-      color: 'purple',
-      displaySvg: true,
-    }"
-  ></app-button>
+  <app-button [button]="buttonService.stackBtn()"></app-button>
 </section>
