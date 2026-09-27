@@ -41,6 +41,7 @@ export class ButtonService {
     fontSize: 'lg',
     color: 'green',
     displaySvg: false,
+    link: '/pdf/curriculo.pdf'
   });
 
   stackBtn = signal<ButtonData>({
