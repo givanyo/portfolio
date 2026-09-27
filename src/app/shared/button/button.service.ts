@@ -8,17 +8,24 @@ import { Button } from './button';
 })
 export class ButtonService {
   modalService = inject(ModalService);
+  toggleContactModal = () => {
+    this.modalService.displayContactModal.update((display) => !display);
+    this.toggleContactClose();
+  };
+
+  toggleStackModal = () => {
+    this.modalService.displayStackModal.update((display) => !display);
+    this.toggleContactClose();
+  };
 
   toggleContactClose = () => {
     if (this.contactCloseBtn().text == 'contato') {
       this.contactCloseBtn.set({ ...this.contactCloseBtn(), text: 'fechar', color: 'white' });
-      this.modalService.displayNav.set(false);
-      this.modalService.displayContactModal.set(true);
       return;
     }
     this.contactCloseBtn.set({ ...this.contactCloseBtn(), text: 'contato', color: 'purple' });
-    this.modalService.displayNav.set(true);
     this.modalService.displayContactModal.set(false);
+    this.modalService.displayStackModal.set(false);
   };
 
   contactBtn = signal<ButtonData>({
@@ -26,7 +33,7 @@ export class ButtonService {
     fontSize: 'lg',
     color: 'purple',
     displaySvg: false,
-    action: this.toggleContactClose,
+    action: this.toggleContactModal,
   });
 
   contactCloseBtn = signal<ButtonData>({
@@ -34,7 +41,7 @@ export class ButtonService {
     fontSize: 'md',
     color: 'purple',
     displaySvg: false,
-    action: this.toggleContactClose,
+    action: this.toggleContactModal,
   });
 
   cvBtn = signal<ButtonData>({
@@ -50,6 +57,7 @@ export class ButtonService {
     fontSize: 'md',
     color: 'purple',
     displaySvg: true,
+    action: this.toggleStackModal
   });
 
   exploreBtn = signal<ButtonData>({
