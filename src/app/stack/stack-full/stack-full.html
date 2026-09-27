@@ -1,0 +1,31 @@
+<div class="title-and-card">
+  <h2>Front-End</h2>
+  <div class="cards">
+    @for (card of frontEndCards; track card.title) {
+      <app-stack-card [stackCard]="card" />
+    }
+  </div>
+</div>
+
+<div class="title-and-card">
+  <h2>Back-End</h2>
+  <div class="cards">
+    @for (card of backEndCards; track card.title) {
+      <app-stack-card [stackCard]="card" />
+    }
+  </div>
+</div>
+
+<div class="title-and-card">
+  <h2>Banco de Dados</h2>
+  @for (card of dbCards; track card.title) {
+    <app-stack-card [stackCard]="card" />
+  }
+</div>
+
+<div class="title-and-card">
+  <h2>Outras Ferramentas</h2>
+  @for (card of otherCards; track card.title) {
+    <app-stack-card [stackCard]="card" />
+  }
+</div>
