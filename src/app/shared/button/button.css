@@ -36,6 +36,13 @@ svg {
   font-size: 1.75rem;
 }
 
+.text-xl {
+  font-size: 12.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .purple {
   color: var(--purple);
 }

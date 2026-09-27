@@ -9,7 +9,7 @@
   --white-hover: #ffffff;
   --white-text: #d9d9d9;
   --white-text-paragraph: hsla(0, 0%, 85%, 0.8);
-
+  --purple-70: hsla(249, 50%, 56%, 70%);
   --purple: #6858c7;
   --purple-hover: #8474dc;
   
@@ -26,4 +26,8 @@
 body {
   overflow-x: hidden;
   background-color: #1a1a1a;
+}
+
+body.hidden-scrollbar {
+  overflow-y: hidden;
 }

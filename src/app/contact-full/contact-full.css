@@ -1,0 +1,21 @@
+:host {
+  position: fixed;
+  top: 0;
+  margin-inline: -1.5rem;
+  width: 100%;
+  min-height: 100%;
+  max-height: fit-content;
+  padding-top: 10rem;
+  background-color: var(--purple-70);
+  backdrop-filter: blur(16px);
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+.spacer {
+  width: 100%;
+  height: 4px;
+  background-color: var(--white);
+}
