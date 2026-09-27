@@ -12,9 +12,9 @@
   --purple-70: hsla(249, 50%, 56%, 70%);
   --purple: #6858c7;
   --purple-hover: #8474dc;
-  
-  --green: #D8F53D;
-  --green-hover: #E2F76E;
+
+  --green: #d8f53d;
+  --green-hover: #e2f76e;
 }
 * {
   margin: 0;
@@ -27,7 +27,7 @@ body {
   overflow-x: hidden;
   background-color: #1a1a1a;
 }
-
+html:has(body.hidden-scrollbar),
 body.hidden-scrollbar {
-  overflow-y: hidden;
+  overflow: hidden;
 }
