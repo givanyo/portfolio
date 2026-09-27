@@ -12,4 +12,9 @@ import { ModalService } from '../modal.service';
 export class Header {
   buttonService = inject(ButtonService);
   modalService = inject(ModalService);
+  scrollTo(id: string) {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: 'smooth'
+  });
+}
 }

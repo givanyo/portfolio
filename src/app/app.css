@@ -1,3 +1,9 @@
 main {
-    padding-inline: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+#about,
+#stack,
+#projects {
+  scroll-margin-top: 8rem;
 }
