@@ -5,13 +5,15 @@ import { computed, effect, Injectable, signal } from '@angular/core';
 })
 export class ModalService {
   displayContactModal = signal(false);
-  displayNav = signal(true);
+  displayStackModal = signal(false);
 
-  isShowingModal = computed(() => this.displayContactModal() == true)
-  
+  isShowingModal = computed(() => this.displayContactModal() || this.displayStackModal());
+
   constructor() {
     effect(() => {
-      this.isShowingModal() ? document.body.classList.add('hidden-scrollbar') : document.body.classList.remove('hidden-scrollbar');
-    })
+      this.isShowingModal()
+        ? document.body.classList.add('hidden-scrollbar')
+        : document.body.classList.remove('hidden-scrollbar');
+    });
   }
 }
