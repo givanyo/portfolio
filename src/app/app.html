@@ -1,14 +1,14 @@
 <main>
   <app-header />
-  <app-about />
-  <app-stack />
-  <app-projects />
+  <app-about id="about" />
+  <app-stack id="stack" />
+  <app-projects id="projects" />
   <app-footer />
   @if (displayContactModal()) {
     <app-contact-full />
   }
 
-  @if(displayStackModal()) {
+  @if (displayStackModal()) {
     <app-stack-full />
   }
 </main>

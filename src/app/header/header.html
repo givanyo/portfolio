@@ -2,10 +2,10 @@
   <p>gio viana</p>
   <nav>
     <ul>
-      <li>sobre</li>
-      <li>tecnologias</li>
-      <li>projetos</li>
-      <li>curriculo</li>
+      <li (click)="scrollTo('about')">sobre</li>
+      <li (click)="scrollTo('stack')">tecnologias</li>
+      <li (click)="scrollTo('projects')">projetos</li>
+      <a href="pdf/curriculo.pdf" target="_blank">curriculo</a>
     </ul>
   </nav>
   <app-button [button]="buttonService.contactCloseBtn()"></app-button>
