@@ -15,6 +15,22 @@
 
   --green: #d8f53d;
   --green-hover: #e2f76e;
+
+  --btn-font-xl: 12.5rem;
+  --btn-font-lg: 1.75rem;
+  --btn-font-md: 1.375rem;
+
+  --font-size-xl: 2.5rem;
+  --font-size-lg: 2rem;
+
+  --font-size-md: 1.25rem;
+  --font-size-sm: 1rem;
+
+  --project-font-lg: 1.666rem;
+  --project-font-md: 1.125rem;
+
+  --modal-title: 3rem;
+  --modal-card: 1.25rem;
 }
 * {
   margin: 0;
@@ -30,4 +46,37 @@ body {
 html:has(body.hidden-scrollbar),
 body.hidden-scrollbar {
   overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --btn-font-xl: 8rem;
+    --btn-font-lg: 1.5rem;
+    --btn-font-md: 1.25rem;
+
+    --font-size-xl: 2rem;
+    --font-size-lg: 1.75rem;
+
+    --project-font-lg: 1.5rem;
+
+    --modal-title: 2.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --btn-font-xl: 4.5rem;
+    --btn-font-lg: 1.25rem;
+    --btn-font-md: 1.125rem;
+
+    --font-size-xl: 1.5rem;
+    --font-size-lg: 1.25rem;
+    --font-size-md: 1.125rem;
+
+    --project-font-lg: 1.25rem;
+    --project-font-md: 1rem;
+
+    --modal-title: 1.75rem;
+    --modal-card: 1rem;
+  }
 }

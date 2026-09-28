@@ -11,7 +11,7 @@ section {
 h1 {
     font-weight: 500;
     color: var(--white-text);
-    font-size: 2.5rem;
+    font-size: var(--font-size-xl);
     line-height: 1.4;
     text-wrap: balance;
 }
@@ -22,16 +22,6 @@ h1 {
     margin-top: 3rem;
 }
 
-button {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    font-size: 1.75rem;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-    cursor: pointer;
-}
-
 .purple {
     color: var(--purple);
 }
@@ -39,3 +29,4 @@ button {
 .green-btn {
     color: hsla(69, 90%, 60%, 60%);
 }
+

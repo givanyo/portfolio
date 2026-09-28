@@ -20,3 +20,17 @@
   height: 4px;
   background-color: var(--white);
 }
+
+
+@media (max-width: 1024px) {
+  :host {
+    padding-top: 6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :host {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  }
+}

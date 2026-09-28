@@ -3,8 +3,7 @@
   flex-direction: column;
   gap: 6rem;
   position: fixed;
-  top: 0;
-  margin-inline: -1.5rem;
+  inset: 0;
   width: 100%;
   height: 100vh;
   padding-top: 12rem;
@@ -22,12 +21,27 @@
     color: var(--green);
     font-weight: 600;
     letter-spacing: 0.04em;
-    font-size: 3rem;
+    font-size: var(--modal-title);
     text-transform: uppercase;
   }
   .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  :host {
+    gap: 4rem;
+    padding-top: 9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :host {
+    gap: 3rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
   }
 }

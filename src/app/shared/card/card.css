@@ -1,14 +1,10 @@
 :host {
   display: flex;
-  min-width: 540px;
-  max-width: 33%;
-  flex: 1 1 0;
+  flex: 1 0 0;
   flex-direction: column;
   gap: 2.5rem;
   background-color: #242424;
-  padding-inline: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
+  padding: 2rem 1.5rem 3rem;
   color: var(--white-text-paragraph);
   border-radius: 8px;
 }
@@ -29,12 +25,31 @@
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: var(--font-size-md);
   width: 100%;
   text-wrap: balance;
   line-height: 1.4;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: var(--font-size-lg);
+}
+
+@media (max-width: 1480px) {
+  :host {
+    min-width: 45%;
+    flex: 0 0 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  :host {
+    min-width: 70%;
+  }
+
+  @media (max-width: 768px) {
+    :host {
+      min-width: 100%;
+    }
+  }
 }
