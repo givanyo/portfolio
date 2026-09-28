@@ -1,8 +1,8 @@
 section {
-    margin-top: 10.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  margin-top: 10.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .section-title {
   text-transform: uppercase;
@@ -11,24 +11,60 @@ section {
 }
 
 .project-wrapper {
-    width: 65%;
-    align-self: center;
+  width: 65%;
+  align-self: center;
 }
 .container-center {
-    display: flex;
-    align-self: center;
-    gap: 8rem;
-    width: fit-content;
+  display: flex;
+  align-self: center;
+  gap: 8rem;
+  width: 100%;
 }
 
 .project-column {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 8rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8rem;
 }
 
 .row-full-width {
-    width: 100%;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+@media (max-width: 1024px) {
+  section {
+    margin-top: 7rem;
+  }
+  .project-wrapper {
+    width: 85%;
+  }
+  .container-center,
+  .project-column {
+    gap: 4rem;
+  }
+  .row-full-width {
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-wrapper {
+    width: 90%;
+  }
+  .container-center {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
     margin-top: 5rem;
+    gap: 1.5rem;
+  }
+  .container-center,
+  .project-column {
+    gap: 3rem;
+  }
 }

@@ -21,3 +21,9 @@ section {
   width: 100%;
   margin-bottom: 4rem;
 }
+
+@media (max-width: 1200px) {
+  .cards {
+    gap: 2rem;
+  }
+}

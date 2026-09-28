@@ -57,3 +57,12 @@ a:hover {
     display: none;
   }
 }
+
+@media (max-width: 767px) {
+  header {
+    padding-block: 1.25rem;
+  }
+    header nav {
+      display: none;
+    }
+}
