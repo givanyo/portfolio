@@ -12,19 +12,17 @@
 
   p,
   a {
-    position: relative;
-    transition: cubic-bezier(0.47, 0, 0.745, 0.715) 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25em;
     text-decoration: none;
-    svg {
-      position: absolute;
-      right: 24;
-      padding-top: 2px;
-    }
+    transition: color 0.15s cubic-bezier(0.47, 0, 0.745, 0.715);
   }
-}
 
-svg {
-  margin-top: 4px;
+  svg {
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
 }
 
 .text-md {
@@ -69,5 +67,12 @@ svg {
   svg path,
   a svg path {
     stroke: var(--purple-hover);
+  }
+}
+
+
+@media (max-width: 768px) {
+  svg {
+    margin-top: 1px;
   }
 }
