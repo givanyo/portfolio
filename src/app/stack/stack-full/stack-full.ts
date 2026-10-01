@@ -7,6 +7,9 @@ import { StackCard } from '../../shared/stack-card/stack-card';
   imports: [StackCard],
   templateUrl: './stack-full.html',
   styleUrl: './stack-full.css',
+  host: {
+    'data-lenis-prevent': '',
+  },
 })
 export class StackFull {
   cards: Record<string, StackCardData[]> = {
@@ -33,8 +36,8 @@ export class StackFull {
       },
       {
         iconPath: '/gsap.svg',
-        title: 'GSAP'
-      }
+        title: 'GSAP',
+      },
     ],
 
     backEnd: [

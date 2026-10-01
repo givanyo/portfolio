@@ -7,6 +7,9 @@ import { ButtonService } from '../shared/button/button.service';
   imports: [Button],
   templateUrl: './contact-full.html',
   styleUrl: './contact-full.css',
+    host: {
+    'data-lenis-prevent': '',
+  },
 })
 export class ContactFull {
   buttonService = inject(ButtonService);
