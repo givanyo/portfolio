@@ -57,12 +57,24 @@ a:hover {
     display: none;
   }
 }
+.film-roll {
+  display: flex;
+  flex-direction: column;
+  height: 26px;
+  overflow: hidden;
+  cursor: pointer;
+}
 
+.film-roll > p {
+  flex-shrink: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
 @media (max-width: 767px) {
   header {
     padding-block: 1.25rem;
   }
-    header nav {
-      display: none;
-    }
+  header nav {
+    display: none;
+  }
 }

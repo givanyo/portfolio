@@ -1,5 +1,5 @@
 import { computed, effect, inject, Injectable, signal } from '@angular/core';
-import { LenisService } from './lenis/lenis.service';
+import { LenisService } from './animation/lenis.service';
 
 @Injectable({
   providedIn: 'root',
