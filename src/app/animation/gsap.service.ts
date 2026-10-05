@@ -9,7 +9,7 @@ export class GsapService {
   animationParams = {
     filmRoll: {
       duration: 1.5,
-      ease: 'power3.out',
+      ease: 'power2.inOut',
       overwrite: true,
     },
   };
