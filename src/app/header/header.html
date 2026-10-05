@@ -1,5 +1,9 @@
 <header [class.hidden]="modalService.isShowingModal()">
-  <p>gio viana</p>
+  <div class="film-roll">
+    @for (count of paragraphCount; track $index) {
+      <p>gio viana</p>
+    }
+  </div>
   <nav>
     <ul>
       <li (click)="scrollTo('about')">sobre</li>
